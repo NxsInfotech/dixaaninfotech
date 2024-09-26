@@ -118,17 +118,34 @@ ul li {
   color: #ffffff;
 }
 .icons_main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+  gap: 16px; /* Adjusts the space between items */
+  margin: 100px 0px;
+}
+.icons_border {
+  display: flex; /* Centers the icons */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  border: 1px solid #ccc; /* Optional: adds a border around each icon */
+  padding: 10px; /* Optional: adds padding around the icons */
+  border-radius: 8px;
+}
+.icons_main .icons_border {
   transform: rotate(45deg);
   border-radius: 4px;
   border: solid 1px #ffffff;
   display: inline-block;
   height: 8em;
   line-height: 8em;
-  margin: 0;
   text-align: center;
   width: 8em;
-}
-.icons_main .icons_border {
+  margin: 40px 0px;
 }
 .icons {
+  font-size: 4em;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }

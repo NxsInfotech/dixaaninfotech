@@ -2,9 +2,9 @@ import "./App.css";
 import logo from "./images/logo.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesome component
 import {
-  faCoffee,
-  faBolt,
   faCamera,
+  faBoltLightning,
+  faBolt,
   faCog,
   faBuilding,
   faDownload,
@@ -74,54 +74,44 @@ function App() {
 
       <section id="two" className="section_3">
         <div className="grid-container">
-          <div className="grid-item ">
-            {/* <ul className="icons">
-                <li>
-                  <span className=" fas fa-building"></span>{" "}
-                 
-                </li>
-                <li>
-                  <span className=" fas fa-bolt"></span> 
-                </li>
-                <li>
-                  <span className=" fas fa-camera-retro"></span>{" "}
-                 
-                </li>
-                <li>
-                  <span className=" fas fa-cog"></span>
-                </li>
-                <li>
-                  <span className=" fas fa-desktop"></span>{" "}
-                
-                </li>
-                <li>
-                  <i className=" fas fa-download"></i>{" "}
-                  
-                </li>
-              </ul> */}
+          <div className="grid-item">
             <div className="icons_main">
+              {/* Icon Container */}
               <div className="icons_border">
                 <div className="icons">
-                  <FontAwesomeIcon icon={faBuilding} /> {/* Coffee icon */}
+                  <FontAwesomeIcon icon={faBuilding} /> {/* Building icon */}
                 </div>
               </div>
-              <div>
-                <FontAwesomeIcon icon={faDownload} /> {/* Coffee icon */}
+
+              <div className="icons_border">
+                <div className="icons">
+                  <FontAwesomeIcon icon={faDownload} /> {/* Download icon */}
+                </div>
               </div>
-              <div>
-                <FontAwesomeIcon icon={faBolt} /> {/* Coffee icon */}
+
+              <div className="icons_border">
+                <div className="icons">
+                  <FontAwesomeIcon icon={faBoltLightning} /> {/* Bolt icon */}
+                </div>
               </div>
-              <div>
-                <FontAwesomeIcon icon={faCoffee} /> {/* Coffee icon */}
+
+              <div className="icons_border">
+                <div className="icons">
+                  <FontAwesomeIcon icon={faBolt} />{" "}
+                  {/* Bolt icon (duplicate) */}
+                </div>
               </div>
-              <div>
-                <FontAwesomeIcon icon={faBolt} /> {/* Bolt icon */}
+
+              <div className="icons_border">
+                <div className="icons">
+                  <FontAwesomeIcon icon={faCamera} /> {/* Camera icon */}
+                </div>
               </div>
-              <div>
-                <FontAwesomeIcon icon={faCamera} /> {/* Camera icon */}
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faCog} />
+
+              <div className="icons_border">
+                <div className="icons">
+                  <FontAwesomeIcon icon={faCog} /> {/* Cog icon */}
+                </div>
               </div>
             </div>
           </div>
