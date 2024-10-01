@@ -1,5 +1,5 @@
 /* App.css */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,100italic,200,200italic");
 
 /* Apply the font to the body or specific elements */
 body {
@@ -97,19 +97,24 @@ button {
 .grid_1 ul li {
   margin-bottom: 10px;
 }
-.major h2 {
-  color: #555;
-  font-size: 43px;
+.major p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 42.6667px;
   line-height: 1.35em;
 }
 ul li {
   font-size: 22px;
   line-height: 1.35em;
-  color: #ffffff;
+  color: #555555;
+}
+.major p u {
+  width: 20px;
 }
 .section_3 {
   background-color: #333;
-  color: rgba(255, 255, 255, 0.75);
+  color: #ffffff;
+  font-weight: 300;
+  font-style: normal;
   background-attachment: fixed, fixed;
   background-image: url(images/overlay1.png), url(images/header.jpg);
   background-size: auto, cover;
@@ -148,4 +153,19 @@ ul li {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+.grid_2 {
+  margin: 100px 0px;
+}
+.hline {
+  width: 20%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 40px 0px;
+}
+.brandimages {
+  padding: 6em 0 4em 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }

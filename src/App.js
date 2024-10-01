@@ -9,6 +9,14 @@ import {
   faBuilding,
   faDownload,
 } from "@fortawesome/free-solid-svg-icons";
+import intel from "./images/intel.webp";
+import hp from "./images/hp.webp";
+import honeywell from "./images/honeywell.webp";
+import quickheal from "./images/quickheal.webp";
+import wd from "./images/wd.webp";
+import asus from "./images/ASUS-01.webp";
+import dahua from "./images/dahua.webp";
+import { height } from "@fortawesome/free-solid-svg-icons/fa0";
 
 const services = [
   "Network Products / Solutions",
@@ -19,6 +27,12 @@ const services = [
   "Antivirus / Printer",
   "Power & Data Backups Solutions",
 ];
+const brandimages = [intel, hp, honeywell, quickheal, wd, asus, dahua];
+const brandimagegap = {
+  border: "1px solid",
+  width: "100%",
+  height: 160,
+};
 
 function App() {
   return (
@@ -119,30 +133,26 @@ function App() {
           <div className="grid_2">
             {services.map((item, index) => (
               <div key={index} className="major">
-                <h2>{item}</h2>
+                <p>{item}</p>
+                <hr className="hline" />
               </div>
             ))}
           </div>
         </div>
       </section>
+      <section></section>
 
-      <section id="three" className="main style1 special">
-        <div className="container">
-          {[
-            "images/intel.webp",
-            "images/icons8-hp-480.webp",
-            "images/honeywell.webp",
-            "images/quickheal.webp",
-            "images/wd.webp",
-            "images/ASUS-01.webp",
-            "images/dahua_technology-logo-brandlogo.net_.webp",
-          ].map((src, index) => (
-            <img
-              key={index}
-              src={src}
-              alt=""
-              height={index === 5 ? "200px" : "150px"}
-            />
+      <section id="three" className="brandimages">
+        <div className="container" style={brandimagegap}>
+          {brandimages.map((logo, index) => (
+            <span key={index}>
+              <img
+                src={logo}
+                alt=""
+                height={index === 5 ? "160px" : "150px"}
+                width={index === 5 ? "160px" : "150px"}
+              />
+            </span>
           ))}
         </div>
       </section>
